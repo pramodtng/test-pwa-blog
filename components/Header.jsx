@@ -34,7 +34,7 @@ const Header = () => {
               className='cursor-pointer'
             />
             <Link href="/">
-              <span className='cursor-pointer font-bold text-7xl lg:text-4xl lg:ml-2 lg:tracking-[2px]'>
+              <span className='cursor-pointer font-bold text-2xl lg:text-6xl lg:ml-2 lg:tracking-[2px]'>
                 བཀྲིས་བརྡ་དོན་བརྒྱད་འབྲེལ་ཚད་འཛིན།།
               </span>
             </Link>
