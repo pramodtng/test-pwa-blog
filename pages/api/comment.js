@@ -17,6 +17,7 @@ export default async function comment(req, res) {
   `
 
   try {
+    console.log(JSON.stringify(req.body))
     const result = await graphQLClient.request(query, req.body)
     return res.status(200).send(result)
   }
