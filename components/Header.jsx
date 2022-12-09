@@ -25,31 +25,20 @@ const Header = () => {
       <div className='absolute container mx-auto px-10 mb-4 top-0 left-0'>
         <div className='w-full flex items-center py-8'>
           <div className='flex items-center md:float-left hover:text-blue-400'>
-            {/* <p className='text-[22px] text-center'>BlogSpot</p> */}
-            <Image
-              src='/logo.png'
-              alt='description'
-              height={50}
-              width={80}
-              className='cursor-pointer'
-            />
+            <Link href = "/">
+              <Image
+                src='/logo.png'
+                alt='description'
+                height={88}
+                width={120}
+                className='cursor-pointer'
+              />
+            </Link>
             <Link href="/">
               <span className='cursor-pointer font-bold text-2xl lg:text-6xl lg:ml-2 lg:tracking-[2px]'>
                 བཀྲིས་བརྡ་དོན་བརྒྱད་འབྲེལ་ཚད་འཛིན།།
               </span>
             </Link>
-          </div>
-          <div className='hidden md:float-left md:contents lg:float-left'>
-            {/* {categories.map(function (category) {
-              return <Link key={category.slug} href={`/category/$[category.slug]`}>
-                <span className='md:float-right mt-2 align-middle ml-4 font-semibold cursor-pointer'>
-                  {category.name}
-                </span>
-              </Link>
-            })} */}
-            {/* <span className='md:float-left mt-2 align-middle ml-4 font-semibold cursor-pointer lg:float-right'>
-              hi
-            </span> */}
           </div>
         </div>
       </div>

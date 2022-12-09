@@ -20,3 +20,15 @@
   "display": "standalone",
   "orientation": "portrait"
 }
+
+
+{
+  "name": "Tashi Electronics",
+  "short_name": "tashi-electronics",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  
+}

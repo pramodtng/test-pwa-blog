@@ -14,19 +14,19 @@ const PostCard = ({ post }) => {
           className='object-top absolute object-cover shadow-lg rounded-t-lg lg:rounded-lg w-full'
         />
       </div>
-      <h1 className='transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-2xl font-semibold'>
+      <h1 className='transition duration-700 text-center mb-6 cursor-pointer hover:text-pink-600 text-2xl font-semibold'>
         <Link href={`/post/${post.id}`}>  
           {post.title}
         </Link>
       </h1>
-      <div className='block lg:flex text-center items-center justify-center mb-8 w-full'>
+      <div className='block lg:flex text-center items-center justify-start mb-4 w-full'>
         <div className='flex items-center justify-center lg:mb-0 w-full lg:w-auto mr-8'>
           <img
             src={post.author.photo.url}
             alt='author-imag'
             className='align-middle rounded-full h-12 w-12'
           />
-          <p className='inline align-middle text-gray-700 ml-2 text-lg'> {post.name} </p>
+          <p className='inline align-middle text-gray-700 ml-2 text-lg'> {post.author.name} </p>
         </div>
         <div className='font-medium text-gray-700'>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,10 +35,10 @@ const PostCard = ({ post }) => {
           <span> {moment(post.createdAt).format("MM DD, YYYY")} </span>
         </div>
       </div>
-      <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8'>
+      <p className='text-left text-lg text-gray-700 font-normal px-4 lg:px-4 mb-6'>
         {post.excerpt}
       </p>
-      <div className='text-center'>
+      <div className='text-right'>
         <Link href={`/post/${post.slug}`}>
           <span className='transition duration-500 transform hover:translate-y-1 inline-block bg-pink-600 text-lg rounded-full font-medium text-white px-7 py-3 cursor-pointer'>
             Continue Reading
